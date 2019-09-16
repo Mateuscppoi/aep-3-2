@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "bf31aee1-20da-4bf1-82d9-b1a719ca9b0c",
+		"name": "aep-3-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar Conceito",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJEZXRhaWxzIjp7ImNpdHkiOiJNYXJpbmfDoSIsInN0YXRlIjoiUGFyYW7DoSIsImNvdW50cnkiOiJCcmFzaWwifSwiVXNlciI6InN5c3VzZXIiLCJleHAiOjE1NjE2ODAyMzJ9.3kA0JYPgjOVDwTrfCeYl0g_xIhNEzJEgJ2YY9tWn2iWNKKMhKOnxr8dTZW-tz27IdHtRJouwOW5GGw3pUfV3pg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/conceito/{{id}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conceito",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar conceito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJEZXRhaWxzIjp7ImNpdHkiOiJNYXJpbmfDoSIsInN0YXRlIjoiUGFyYW7DoSIsImNvdW50cnkiOiJCcmFzaWwifSwiVXNlciI6InN5c3VzZXIiLCJleHAiOjE1NjE2ODAyMzJ9.3kA0JYPgjOVDwTrfCeYl0g_xIhNEzJEgJ2YY9tWn2iWNKKMhKOnxr8dTZW-tz27IdHtRJouwOW5GGw3pUfV3pg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nota\": 9,\n    \"avaliacao\": {\n        \"materia\": \"Programação\",\n        \"professor\": \"Arthur\",\n        \"bimestre\": \"Bim1\"\n    },\n    \"aluno\": {\n        \"nome\": \"Mateus Poi\",\n        \"curso\": \"Eng. de software\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/conceito",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conceito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar conceito",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJEZXRhaWxzIjp7ImNpdHkiOiJNYXJpbmfDoSIsInN0YXRlIjoiUGFyYW7DoSIsImNvdW50cnkiOiJCcmFzaWwifSwiVXNlciI6InN5c3VzZXIiLCJleHAiOjE1NjE2ODAyMzJ9.3kA0JYPgjOVDwTrfCeYl0g_xIhNEzJEgJ2YY9tWn2iWNKKMhKOnxr8dTZW-tz27IdHtRJouwOW5GGw3pUfV3pg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/conceito/{{id}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conceito",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar conceito",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJEZXRhaWxzIjp7ImNpdHkiOiJNYXJpbmfDoSIsInN0YXRlIjoiUGFyYW7DoSIsImNvdW50cnkiOiJCcmFzaWwifSwiVXNlciI6InN5c3VzZXIiLCJleHAiOjE1NjE2ODAyMzJ9.3kA0JYPgjOVDwTrfCeYl0g_xIhNEzJEgJ2YY9tWn2iWNKKMhKOnxr8dTZW-tz27IdHtRJouwOW5GGw3pUfV3pg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nota\": 9,\n    \"avaliacao\": {\n        \"materia\": \"Programação\",\n        \"professor\": \"Arthur\",\n        \"bimestre\": \"Bim1\"\n    },\n    \"aluno\": {\n        \"nome\": \"Mateus Poi\",\n        \"curso\": \"Eng. de software\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/conceito/{{id}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conceito",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
